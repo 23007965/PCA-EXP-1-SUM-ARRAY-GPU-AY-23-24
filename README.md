@@ -29,6 +29,7 @@ Google Colab with NVCC Compiler
 6. Copy output data from the device to the host and verify the results against the host's sequential vector addition. Free memory on the host and the device.
 
 ## PROGRAM:
+```python
 %%cuda -c "-O3 -arch=sm_75"
 #include <cuda_runtime.h>
 #include <stdio.h>
@@ -175,9 +176,10 @@ int main(int argc, char **argv) {
 
     return(0);
 }
-
+```
 ## OUTPUT:
-SHOW YOUR OUTPUT HERE
+<img width="786" height="161" alt="image" src="https://github.com/user-attachments/assets/d880225e-f366-4515-a33f-d9d317c99b5c" />
+
 
 ## RESULT:
 Thus, Implementation of sum arrays on host and device is done in nvcc cuda using random number.
